@@ -1,0 +1,65 @@
+html, body {
+	margin: 0;
+}
+
+svg {
+	border: .5px solid black;
+	border-radius: 2px;
+}
+
+.graph-title {
+	font-family: arial;
+}
+
+.button {
+	background-color: lightgrey;
+	border: 1px solid #444;
+	padding: 10px;
+	margin: 0 0 0 12px;
+	border-radius: 2px;
+	color: #444;
+	font-family: arial;
+	user-select: none;
+	cursor: pointer;
+	transition: all .25s ease-in-out;
+}
+
+.button:hover {
+	padding: 12px;
+	margin:  0 0 0 10px;
+	font-size: 18px;
+}
+
+.toast {
+	top: 0;
+	right: 0;
+	display: block;
+	position: absolute;
+	font-family: arial;
+	padding: 20px;
+	background-color: white;
+	border: 2px solid lightgrey;
+	animation: toast-in .5s ease-in-out;
+}
+
+.toast-out {
+	animation: toast-out .5s ease-in;
+}
+
+@keyframes toast-out {
+	from {
+		right: 0;
+	}
+	to {
+		right: -200px;
+	}
+}
+
+@keyframes toast-in {
+	from {
+		right: -200px;
+	}
+	to {
+		right: 0;
+	}
+}
