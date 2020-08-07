@@ -32,26 +32,6 @@ window.start = () => {
 		data.map((d, i) => scX(i+1))
 	)
 
-	// new Array(data.length).fill(1).map((d, i) => i * (w/data.length))
-
-	// console.log(
-	// 	new Array(data.length).fill(1).map((d, i) => i * (w/data.length))
-	// )
-
-	// console.log(
-	// 	new Array(8)
-	// 	.fill(1)
-	// 	.map((d, i) => {
-	// 		console.log(
-	// 			w/i
-	// 		)
-	// 	})
-	// )
-
-	// console.log(
-	// 	data.map(d => d.ages)
-	// )
-
 	let scY = d3.scaleLinear()
 	.domain([1, 500])
 	.range([h - b, b])
